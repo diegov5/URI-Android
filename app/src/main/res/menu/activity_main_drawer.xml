@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="Participate">
+    <menu>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/clock"
+            android:title="Upcoming" />
+        <!--<item
+            android:id="@+id/categories"
+            android:icon="@drawable/inbox"
+            android:title="Categories" />
+        <item
+            android:id="@+id/near"
+            android:icon="@drawable/pin"
+            android:title="Studies Near Me" />-->
+        <item
+            android:id="@+id/signup"
+            android:icon="@drawable/signup"
+            android:title="General Survey" />
+    </group>
+    </menu>
+</item>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/contact"
+                    android:icon="@drawable/feedback"
+                    android:title="Contact Us" />
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/info"
+                    android:title="About Us" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Connect">
+        <menu>
+            <item
+                android:id="@+id/insta"
+                android:icon="@drawable/insta"
+                android:title="Instagram" />
+            <item
+                android:id="@+id/facebook"
+                android:icon="@drawable/facebook"
+                android:title="Facebook" />
+            <item
+                android:id="@+id/twitter"
+                android:icon="@drawable/twitter"
+                android:title="Twitter" />
+        </menu>
+    </item>
+
+</menu>

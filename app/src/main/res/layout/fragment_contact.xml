@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uri.diegovaldezlocal.uriux.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@drawable/logo_with_words" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Get in touch!"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36dp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Send us an email, give us a call, or come by our office for any questions!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:context="com.uri.diegovaldezlocal.uriux.MainActivity">
+
+        <ImageButton
+            android:id="@+id/email"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/email">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/address"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/call"
+            android:layout_alignStart="@+id/call"
+            android:layout_below="@+id/call"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_weight="0.03"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/near">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/call"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/email"
+            android:layout_alignStart="@+id/email"
+            android:layout_below="@+id/email"
+            android:layout_gravity="center"
+            android:layout_marginTop="31dp"
+            android:layout_weight="0.05"
+            android:adjustViewBounds="false"
+            android:background="@null"
+            android:cropToPadding="false"
+            android:padding="10dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/call">
+
+        </ImageButton>
+
+        <Button
+            android:id="@+id/emailText"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/email"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@+id/call"
+            android:layout_toRightOf="@+id/call"
+            android:text="info@uriux.com" />
+
+        <Button
+            android:id="@+id/phoneText"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(425) 242-8030"
+            android:layout_alignTop="@+id/call"
+            android:layout_alignLeft="@+id/emailText"
+            android:layout_alignStart="@+id/emailText" />
+
+        <Button
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="17602 NE Union Hill Rd \nRedmond, WA 98075"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:layout_alignTop="@+id/address"
+            android:layout_alignLeft="@+id/phoneText"
+            android:layout_alignStart="@+id/phoneText"
+            android:layout_marginTop="11dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>
